@@ -1,0 +1,20 @@
+body{
+    background-color: aqua;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#borrarTodo{
+    display: flex;
+    flex-direction: column;
+}
