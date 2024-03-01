@@ -6,12 +6,16 @@ let borrarLista = document.querySelector(".botonBorrar");
 
 boton.addEventListener("click",(e)=>{
     e.preventDefault();
-    let li = document.createElement("li");
-    li.setAttribute("class", "listaCreada")
-    li.textContent = "- " + texto.value;
-    li.appendChild(crearboton());
-    ul.appendChild(li);
-    texto.value = ""
+    if(texto.value !== ""){
+        let li = document.createElement("li");
+        li.setAttribute("class", "listaCreada")
+        li.textContent = "- " + texto.value;
+        li.appendChild(crearboton());
+        ul.appendChild(li);
+        texto.value = ""
+    }else{
+        alert("Ingresa una tarea")
+    }
 })
 
 borrarTodo.addEventListener("click", () =>{
