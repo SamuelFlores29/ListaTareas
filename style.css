@@ -18,3 +18,19 @@ main{
     display: flex;
     flex-direction: column;
 }
+
+ul{
+    width: 240px;
+}
+
+
+.listaCreada{
+    background-color: rebeccapurple;
+}
+
+.botonBorrar{
+    background-color: red;
+    color: antiquewhite;
+    float: right;
+
+}
